@@ -7,6 +7,7 @@ A web API built with Node.js and Express, using MongoDB for data storage and Clo
 - **Node.js** & **Express**: Backend server and routing
 - **MongoDB**: NoSQL database
 - **Cloudinary**: Image hosting and management
+- **JWT (JSON Web Token) Cookie**: Authentication mechanism
 
 ## Prerequisites
 
