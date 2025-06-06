@@ -28,10 +28,11 @@ Copy `.env.example` to `.env` and update the environment variables as needed.
 
 You need to set up a MongoDB database, either locally or using a cloud provider like [MongoDB Atlas](https://www.mongodb.com/atlas).  
 Update the `MONGODB_URI` variable in your `.env` file with your database connection string.
+You can use the [MongoDB Compass](https://www.mongodb.com/products/compass) app to test the database connection.
 
 For `APP_SECRET`, you can generate a secure value using an online tool like [uuidtools.com/v4](https://www.uuidtools.com/v4).
 
-Get your Cloudinary credentials (`CLOUDINARY_CLOUD_NAME`, `CLOUDINARY_API_KEY`, `CLOUDINARY_API_SECRET`) from your Cloudinary account.
+Get your Cloudinary credentials (`CLOUDINARY_CLOUD_NAME`, `CLOUDINARY_API_KEY`, `CLOUDINARY_API_SECRET`) from your [Cloudinary account](https://cloudinary.com/).
 
 ## Run
 
