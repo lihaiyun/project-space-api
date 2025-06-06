@@ -13,3 +13,9 @@ A web API built with Node.js and Express, using MongoDB for data storage and Clo
 - Node.js (v14+)
 - MongoDB instance (local or cloud)
 - Cloudinary account
+
+## Installation
+
+```bash
+npm i
+```
