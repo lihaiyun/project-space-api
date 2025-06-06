@@ -19,3 +19,8 @@ A web API built with Node.js and Express, using MongoDB for data storage and Clo
 ```bash
 npm i
 ```
+## Run
+
+```bash
+npm run dev
+```
