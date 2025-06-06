@@ -1,6 +1,6 @@
 # project-space-api
 
-Backend web api built with Node.js and Express, using MongoDB for data storage and Cloudinary for image management.
+Backend Web API built with Node.js and Express, using MongoDB for data storage and Cloudinary for image management.
 
 ## Technologies
 
@@ -15,7 +15,7 @@ Backend web api built with Node.js and Express, using MongoDB for data storage a
 - MongoDB instance (local or cloud)
 - Cloudinary account
 
-Frontend web app repo: [https://github.com/lihaiyun/project-space-app](https://github.com/lihaiyun/project-space-app)
+Frontend Web App repo: [https://github.com/lihaiyun/project-space-app](https://github.com/lihaiyun/project-space-app)
 
 ## Installation
 
@@ -31,3 +31,7 @@ Copy .env.example to .env and update the environment variables as needed.
 ```bash
 npm run dev
 ```
+
+## Deployment
+This Web API can be deployed to [Render](https://render.com/).
+To deploy, push your repository to GitHub and connect it to Render.
