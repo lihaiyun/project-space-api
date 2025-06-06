@@ -24,7 +24,14 @@ npm i
 ```
 
 ## Setup
-Copy .env.example to .env and update the environment variables as needed.
+Copy `.env.example` to `.env` and update the environment variables as needed.
+
+You need to set up a MongoDB database, either locally or using a cloud provider like [MongoDB Atlas](https://www.mongodb.com/atlas).  
+Update the `MONGODB_URI` variable in your `.env` file with your database connection string.
+
+For `APP_SECRET`, you can generate a secure value using an online tool like [uuidtools.com/v4](https://www.uuidtools.com/v4).
+
+Get your Cloudinary credentials (`CLOUDINARY_CLOUD_NAME`, `CLOUDINARY_API_KEY`, `CLOUDINARY_API_SECRET`) from your Cloudinary account.
 
 ## Run
 
@@ -34,4 +41,5 @@ npm run dev
 
 ## Deployment
 This Web API can be deployed to [Render](https://render.com/).
+
 To deploy, push your repository to GitHub and connect it to Render.
