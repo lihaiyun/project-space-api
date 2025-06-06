@@ -26,7 +26,7 @@ npm i
 ## Setup
 Copy `.env.example` to `.env` and update the environment variables as needed.
 
-You need to set up a MongoDB database, either locally or using a cloud provider like [MongoDB Atlas](https://www.mongodb.com/atlas).  
+You need to set up a MongoDB database, either locally or using the cloud [MongoDB Atlas](https://www.mongodb.com/atlas).  
 Update the `MONGODB_URI` variable in your `.env` file with your database connection string.
 You can use the [MongoDB Compass](https://www.mongodb.com/products/compass) app to test the database connection.
 
