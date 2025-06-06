@@ -22,6 +22,10 @@ Frontend web app repo: [https://github.com/lihaiyun/project-space-app](https://g
 ```bash
 npm i
 ```
+
+## Setup
+Copy .env.example to .env and update the environment variables as needed.
+
 ## Run
 
 ```bash
