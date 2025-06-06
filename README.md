@@ -1,6 +1,6 @@
 # project-space-api
 
-A web API built with Node.js and Express, using MongoDB for data storage and Cloudinary for image management.
+Backend web API built with Node.js and Express, using MongoDB for data storage and Cloudinary for image management.
 
 ## Technologies
 
