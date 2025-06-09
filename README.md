@@ -30,7 +30,11 @@ You need to set up a MongoDB database, either locally or using the cloud [MongoD
 Update the `MONGODB_URI` variable in your `.env` file with your database connection string.
 You can use the [MongoDB Compass](https://www.mongodb.com/products/compass) app to test the database connection.
 
-For `APP_SECRET`, you can generate a secure value using an online tool like [uuidtools.com/v4](https://www.uuidtools.com/v4).
+For `APP_SECRET`, you can generate a secure value by running the following command in your terminal:
+
+```bash
+node -e "console.log(require('crypto').randomBytes(16).toString('hex'))"
+```
 
 Get your Cloudinary credentials (`CLOUDINARY_CLOUD_NAME`, `CLOUDINARY_API_KEY`, `CLOUDINARY_API_SECRET`) from your [Cloudinary account](https://cloudinary.com/).
 
