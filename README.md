@@ -4,10 +4,11 @@ Backend Web API built with Node.js and Express, using MongoDB for data storage a
 
 ## Technologies
 
-- **Node.js** & **Express**: Backend server and routing
-- **MongoDB**: NoSQL database
-- **Cloudinary**: Image hosting and management
-- **JWT (JSON Web Token) Cookie**: Authentication mechanism
+- **Node.js** – JavaScript runtime (ES6) used for server-side development
+- **Express.js** – Backend framework for handling routing and APIs
+- **MongoDB** – NoSQL database for flexible, document-based storage
+- **Cloudinary** – Image uploading, hosting, and transformation service
+- **JWT (JSON Web Token) + Cookies** – Secure authentication mechanism for user sessions
 
 ## Prerequisites
 
