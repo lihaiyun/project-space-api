@@ -4,9 +4,9 @@ Backend Web API built with Node.js and Express, using MongoDB for data storage a
 
 ## Technologies
 
-- **Node.js** – JavaScript runtime (ES6) used for server-side development
-- **Express v5** – Backend framework for handling routing and APIs
-- **MongoDB** – NoSQL database for flexible, document-based storage
+- **Node.js** – JavaScript runtime for server-side development (code written with ES6)
+- **Express v5** – Web server framework for handling API routing
+- **MongoDB** – NoSQL database for flexible, document-based data storage
 - **Cloudinary** – Image uploading, hosting, and transformation service
 - **JWT (JSON Web Token) + Cookies** – Secure authentication mechanism for user sessions
 
