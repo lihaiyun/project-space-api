@@ -33,6 +33,17 @@ app.use("/projects", projectsRouter);
 app.use("/users", usersRouter);
 app.use("/files", filesRouter);
 
+// Middleware to handle 404 errors
+app.use((req, res) => {
+  res.status(404).json({ message: "Route not found" });
+});
+
+// Middleware to handle 500 errors
+app.use((err, req, res, next) => {
+  console.error(err.stack);
+  res.status(500).json({ message: "Internal server error" });
+});
+
 // Use async function to connect to the database
 const startServer = async () => {
   try {
