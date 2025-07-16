@@ -16,7 +16,14 @@ const userSchema = new mongoose.Schema({
   }
 }, {
   versionKey: false, // Don't add __v to a new document
-  timestamps: true  // Enables `createdAt` and `updatedAt`
+  timestamps: true,  // Enables `createdAt` and `updatedAt`
+  toJSON: {
+    transform: function(doc, ret) {
+      ret.id = ret._id;
+      delete ret._id;
+      return ret;
+    }
+  }
 });
 
 // Create and export the User model

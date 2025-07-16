@@ -39,7 +39,7 @@ router.post("/", validateToken, async (req, res) => {
     status,
     imageId,
     imageUrl,
-    owner: req.user._id,
+    owner: req.user.id,
   });
 
   try {
@@ -104,7 +104,7 @@ router.put("/:id", validateToken, async (req, res) => {
   }
 
   // Check if the user is the owner of the project
-  if (project.owner.toString() !== req.user._id) {
+  if (project.owner.toString() !== req.user.id) {
     return res.status(403).json({ message: "Permission denied" });
   }
 
@@ -137,7 +137,7 @@ router.delete("/:id", validateToken, async (req, res) => {
   }
 
   // Check if the user is the owner of the project
-  if (project.owner.toString() !== req.user._id) {
+  if (project.owner.toString() !== req.user.id) {
     return res.status(403).json({ message: "Permission denied" });
   }
 

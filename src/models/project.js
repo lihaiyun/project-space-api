@@ -30,7 +30,14 @@ const projectSchema = new mongoose.Schema({
   } // Reference to the User model
 }, {
   versionKey: false, // Don't add __v to a new document
-  timestamps: true  // Enables `createdAt` and `updatedAt`
+  timestamps: true,  // Enables `createdAt` and `updatedAt`
+  toJSON: {
+    transform: function(doc, ret) {
+      ret.id = ret._id;
+      delete ret._id;
+      return ret;
+    }
+  }
 });
 
 // Create and export the Project model

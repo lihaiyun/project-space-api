@@ -92,14 +92,14 @@ router.post("/login", async (req, res) => {
         return res.status(400).json({ message: "Invalid email or password" });
     }
 
-    const passwordMatch = await bcrypt.compare(password, user.password);
+    const passwordMatch = bcrypt.compare(password, user.password);
     if (!passwordMatch) {
         return res.status(400).json({ message: "Invalid email or password" });
     }
 
     // Generate JWT token
     const userInfo = {
-        _id: user._id,
+        id: user._id,
         name: user.name,
         email: user.email
     };
