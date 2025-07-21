@@ -69,7 +69,9 @@ router.get("/", async (req, res) => {
 
   let projects = await Project.find(findQuery).populate("owner", "name email")
     .sort({ dueDate: 1 });
-  res.json(projects);
+  res.json({
+    projects: projects
+  });
 });
 
 router.get("/:id", async (req, res) => {
